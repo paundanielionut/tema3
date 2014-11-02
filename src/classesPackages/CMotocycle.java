@@ -3,6 +3,10 @@ package classesPackages;
 /**
  * Created by Daniel on 11/2/2014.
  */
+
+/**
+ *
+ */
 public class CMotocycle extends CVehicle {
 
     public  CMotocycle(){
@@ -19,12 +23,18 @@ public class CMotocycle extends CVehicle {
         System.out.println(getGear());
     }
 
+    /**
+     * functie pentru decrementarea vitezei
+     */
     public void speedDown(){
         int Speed=getSpeed();
         Speed++;
         setSpeed(Speed);
     }
 
+    /**
+     * functie pentru incrementarea vitezei
+     */
     public void speedUp(){
         int Speed=getSpeed();
         Speed--;

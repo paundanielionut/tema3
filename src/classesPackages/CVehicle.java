@@ -29,14 +29,26 @@ abstract class CVehicle implements IHelper{
         type = t;
     }
 
+    /**
+     *
+     * @param g
+     */
     public void setGear(int g){
         gear = g;
     }
 
+    /**
+     *
+     * @param maxS
+     */
     public void setMaxSpeed(int maxS){
         maxSpeed = maxS;
     }
 
+    /**
+     *
+     * @param s
+     */
     public void setSpeed(int s){
         speed = s;
     }
@@ -55,10 +67,16 @@ abstract class CVehicle implements IHelper{
         return speed;
     }
 
+    /**
+     * functia va incrementa viteza cu o pozitie
+     */
     public void incGear(){
         gear++;
     }
 
+    /**
+     * functia va decrementa viteza cu o pozitie
+     */
     public void decGear(){
         gear--;
     }
